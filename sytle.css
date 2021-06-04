@@ -1,0 +1,96 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+#main {
+	width: 100vw;
+	min-height: 100vh;
+	background: url(bg.jpg)center/cover no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+		'Helvetica Neue', sans-serif;
+}
+
+.container {
+	width: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	perspective: 1000px;
+	overflow: hidden;
+}
+
+.form-group {
+	background: white;
+	padding: 1rem;
+	width: 100%;
+	height: 100%;
+}
+.form-group * {
+	margin-top: 10px;
+}
+.form-group h3 {
+	text-align: center;
+	margin-bottom: 2rem;
+	font-size: 2.5rem;
+}
+
+.form-group label {
+	display: block;
+}
+.form-group .form-control {
+	display: block;
+	width: 100%;
+	height: 30px;
+	box-shadow: 0px 3px 5px rgb(197, 194, 194);
+	border: 0.01px solid rgb(233, 231, 231);
+	border-radius: 0.3rem;
+	margin-top: 10px;
+}
+.form-group .btn {
+	display: block;
+	width: 100%;
+	background: rgb(0, 150, 250);
+	border-radius: 0.2rem;
+	border: none;
+	color: white;
+	padding: 0.5rem;
+	font-size: 1rem;
+	margin-top: 20px;
+	letter-spacing: 0.1rem;
+	cursor: pointer;
+}
+.form-group p {
+	margin-bottom: 1rem;
+}
+
+.form-group #link1:hover,
+#link2:hover {
+	color: rgb(109, 106, 106);
+}
+.inner {
+	width: 100%;
+	height: 100%;
+	color: black;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+	border: none;
+}
+
+.front {
+	position: absolute;
+	top: 0;
+	left: 0;
+	backface-visibility: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+.back {
+	background: transparent;
+	transform: rotateY(180deg);
+}

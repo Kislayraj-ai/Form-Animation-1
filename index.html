@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Animation</title>
+    <link rel="stylesheet" href="sytle.css">
+</head>
+<body>
+    <section id="main">
+       <div class="container">
+           <div class="inner">
+            <!--******login Form start*****-->
+            <div class="form-group front">
+                <form>
+                <h3>Sign In</h3>
+            
+                <label>Name</label>
+                <input type="text" class="form-control" />
+                <br />
+           
+        
+                <label>Password</label>
+                <input type="text" class="form-control" />
+                
+            
+                <button class="btn">Sign in</button>
+                <br />
+                <hr>
+                <p>Or Sign Up
+                    <a id="link1" href="#">here</a>
+                </p>
+
+                </form>
+            </div>
+
+            <!--*******Sign in Form Start******-->
+            <div class="back">
+            
+                <div class="form-group">
+                    <h3 >Sign Up</h3>
+                 
+                    <label>Name</label>
+                    <input type="text" class="form-control" />
+                    
+            
+                    <label>Email</label>
+                    <input type="text" class="form-control" />
+                   
+            
+                    <label>Password</label>
+                    <input type="text" class="form-control" />
+                 
+            
+                    <label>Confrim Password</label>
+                    <input type="text"  class="form-control" />
+                
+            
+                    <button class="btn btn-primary">Sign Up</button>
+                 
+                    <br/>
+                         <hr>
+                    <p>Have an account Sign in 
+
+                        <a id="link2" href="#">here</a>
+                    </p>
+            
+                </div>
+            </div>
+
+       </div>
+    </div>
+    </section>
+    
+
+    <!--javascript-->
+    <script type="text/javascript">
+    const signin = document.querySelector('#link1');
+    const signup = document.querySelector('#link2');
+    const inner = document.querySelector('.inner');
+
+    signin.addEventListener('click', () => {
+        inner.style.transform = 'rotateY(180deg)';
+    });
+    signup.addEventListener('click', () => {
+        inner.style.transform = 'rotateY(0deg)';
+    });
+
+    </script>
+</body>
+</html>
